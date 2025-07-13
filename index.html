@@ -1,0 +1,522 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Zhuoyang Zhang</title>
+
+    <meta name="author" content="Zhuoyang Zhang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon/zy.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+    <style>
+      .intro {
+        font-size: 1.3em;
+        line-height: 1.4;
+      }
+      .intro a {
+        font-size: inherit;
+      }
+      .contact-links {
+        font-size: 1.1em !important;
+      }
+      .contact-links a {
+        font-size: inherit !important;
+      }
+      p[style*="text-align:center"] a {
+        font-size: inherit !important;
+      }
+      .paper-content {
+        font-size: 1.3em;
+        line-height: 1.4;
+      }
+      .paper-content a {
+        font-size: inherit !important;
+      }
+      papertitle {
+        font-weight: bold;
+      }
+             strong {
+         font-size: inherit !important;
+         font-weight: bold;
+       }
+       
+       .research-tabs {
+         text-align: center;
+         margin: 20px 0;
+       }
+       
+       .tab-button {
+         background: #f8f9fa;
+         border: 2px solid #e9ecef;
+         padding: 5px 10px;
+         margin: 0 3px;
+         border-radius: 15px;
+         cursor: pointer;
+         font-size: 0.65em;
+         font-weight: 500;
+         transition: all 0.3s ease;
+         color: #495057;
+       }
+       
+       .tab-button:hover {
+         background: #e9ecef;
+         transform: translateY(-2px);
+       }
+
+       .tab-button.active {
+         background: linear-gradient(135deg, #CC66DA, #3D74B6);
+         color: white;
+         border-color: #FFFFFF;
+       }
+       
+       .research-content {
+         display: none;
+         animation: fadeIn 0.5s ease-in-out;
+       }
+       
+       .research-content.active {
+         display: block;
+       }
+       
+       @keyframes fadeIn {
+         from { opacity: 0; transform: translateY(10px); }
+         to { opacity: 1; transform: translateY(0); }
+       }
+    </style>
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <a href="images/scholar.png"><img style="width:100%;max-width:100%;object-fit: cover;" alt="profile photo" src="images/scholar.png" class="hoverZoomLink"></a>
+              </td>
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center; font-size: 2.5em;">
+                Zhuoyang Zhang&nbsp;&nbsp;&nbsp;&nbsp;<span class="chinese-name">张焯扬</span>
+                </p>
+                <p class="intro">
+		I'm a first-year Ph.D. student at <a href="https://www.eecs.mit.edu/">MIT EECS</a>, advised by Prof. <a href="https://hanlab.mit.edu/songhan/">Song Han</a>. I am mainly interested in vision-centric efficient machine learning, especially for foundation models. Previously, I obtained my Bachelor's degree in computer science from <a href="https://iiis.tsinghua.edu.cn/en/Yao_Class/About_Yao_Class.htm">Yao Class</a>, <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>.
+    During my undergraduate study, I was fortunate to work with Prof. <a href="https://ericyi.github.io/">Li Yi</a> and Prof. <a href="https://cseweb.ucsd.edu/~haosu/">Hao Su</a> on 3D computer vision. 
+
+                </p>
+                <p class="contact-links" style="text-align:center;">
+                  <a href="mailto:zy_zhang@mit.edu">Email</a> &nbsp;|&nbsp;
+                  <a href="https://scholar.google.com/citations?user=Q1csT-8AAAAJ&hl=en">Google Scholar</a> &nbsp;|&nbsp;
+                  <a href="https://x.com/zhuoyang_zhang">Twitter</a> &nbsp;|&nbsp;
+                  <a href="https://www.linkedin.com/in/zhuoyang-zhang/">Linkedin</a> &nbsp;|&nbsp;
+                  <a href="https://github.com/zhuoyang20">Github</a>
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+                     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+               <tr>
+               <td style="padding:16px;width:100%;vertical-align:middle">
+                 <h1>Research
+                   <button class="tab-button active" onclick="showTab('selected')">selected</button>
+                   <button class="tab-button" onclick="showTab('full')">all</button>
+                 </h1>
+               </td>
+             </tr>
+           </tbody></table>
+                     <div id="selected-research" class="research-content active">
+           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr>
+              <td style="padding:10px;width:45%;vertical-align:middle">
+                  <div class="one" style="display:flex;align-items:center;height:100%;width:100%;">
+                      <a href="images/vila_u.png">
+                          <img src='images/vila_u.png' class="hoverZoomLink" style="width: 100%; vertical-align:middle;">
+                      </a>
+                  </div>
+              </td>
+              <td class="paper-content" style="padding:20px;width:55%;vertical-align:top">
+                  <papertitle>VILA-U: a Unified Foundation Model Integrating Visual Understanding and Generation</papertitle>
+                  <br>
+                  Yecheng Wu*,&nbsp<strong>Zhuoyang Zhang*</strong>,&nbspJunyu Chen,&nbspHaotian Tang,&nbspDacheng Li,&nbspYunhao Fang,&nbspLigeng Zhu,&nbspEnze Xie,&nbspHongxu Yin,&nbspLi Yi,&nbspSong Han,&nbspYao Lu
+                  
+                  <br>
+                  <em>ICLR 2025</em>
+                  <br>
+                  <a href="https://arxiv.org/abs/2409.04429">[paper]</a>
+                  <a href="https://github.com/mit-han-lab/vila-u">[code]</a>
+                  <a href="https://vila-u.hanlab.ai/">[online demo]</a>
+              </td>
+          </tr>
+
+          <tr>
+            <td style="padding:10px;width:45%;vertical-align:middle">
+                <div class="one" style="display:flex;align-items:center;height:100%;width:100%;">
+                    <a href="images/evitsam2.png">
+                        <img src='images/evitsam2.png' class="hoverZoomLink" style="width: 100%; vertical-align:middle;">
+                    </a>
+                </div>
+            </td>
+            <td class="paper-content" style="padding:20px;width:55%;vertical-align:top">
+                <papertitle>EfficientViT-SAM: Accelerated Segment Anything Model Without Accuracy Loss</papertitle>
+                <br>
+                <strong>Zhuoyang Zhang</strong>,&nbspHan Cai,&nbspSong Han
+                
+                <br>
+                <em>CVPR 2024 ELVM Workshop</em>
+                <br>
+                <a href="https://arxiv.org/abs/2402.05008">[paper]</a>
+                <a href="https://github.com/mit-han-lab/efficientvit">[code]</a>
+                <a href="https://evitsam.hanlab.ai/">[online demo]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:10px;width:45%;vertical-align:middle">
+                <div class="one" style="display:flex;align-items:center;height:100%;width:100%;">
+                    <a href="images/12345++.gif">
+                        <img src='images/12345++.gif' class="hoverZoomLink" style="width: 100%; vertical-align:middle;">
+                    </a>
+                </div>
+            </td>
+            <td class="paper-content" style="padding:20px;width:55%;vertical-align:top">
+                <papertitle>One-2-3-45++: Fast Single Image to 3D Objects with Consistent Multi-View Generation and 3D Diffusion</papertitle>
+                <br>
+                Minghua Liu*,&nbspRuoxi Shi*,&nbspLinghao Chen*,&nbsp<strong>Zhuoyang Zhang*</strong>,&nbspChao Xu*,&nbspXinyue Wei,&nbspHansheng Chen,&nbspChong Zeng,&nbspJiayuan Gu,&nbspHao Su
+                
+                <br>
+                <em>CVPR 2024</em>
+                <br>
+                <a href="https://arxiv.org/abs/2311.07885">[paper]</a>
+                <a href="https://sudo-ai-3d.github.io/One2345plus_page/">[website]</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:10px;width:45%;vertical-align:middle">
+                <div class="one" style="display:flex;align-items:center;height:100%;width:100%;">
+                    <a href="images/c2p.png">
+                        <img src='images/c2p.png' class="hoverZoomLink" style="width: 100%; vertical-align:middle;">
+                    </a>
+                </div>
+            </td>
+            <td class="paper-content" style="padding:20px;width:55%;vertical-align:top">
+                <papertitle>Complete-to-partial 4D distillation for self-supervised point cloud sequence representation learning</papertitle>
+                <br>
+                <strong>Zhuoyang Zhang*</strong>,&nbspYuhao Dong*,&nbspYunze Liu,&nbspLi Yi
+                
+                <br>
+                <em>CVPR 2023</em>
+                <br>
+                <a href="https://arxiv.org/abs/2212.05330">[paper]</a>
+                <a href="https://github.com/dongyh20/C2P?tab=readme-ov-file/">[code]</a>
+            </td>
+          </tr>
+
+                     </tbody></table>
+           </div>
+           
+           <div id="full-list" class="research-content">
+           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr>
+              <td style="padding:10px;width:45%;vertical-align:middle">
+                  <div class="one" style="display:flex;align-items:center;height:100%;width:100%;">
+                      <a href="images/cot-vla.png">
+                          <img src='images/cot-vla.png' class="hoverZoomLink" style="width: 100%; vertical-align:middle;">
+                      </a>
+                  </div>
+              </td>
+              <td class="paper-content" style="padding:20px;width:55%;vertical-align:top">
+                  <papertitle>CoT-VLA: Visual Chain-of-Thought Reasoning for Vision-Language-Action Models</papertitle>
+                  <br>
+                  Qingqing Zhao,&nbspYao Lu,&nbspMoo Jin Kim,&nbspZipeng Fu,&nbsp<strong>Zhuoyang Zhang</strong>,&nbspYecheng Wu,&nbspZhaoshuo Li,&nbspQianli Ma,&nbspSong Han,&nbspChelsea Finn,&nbspAnkur Handa,&nbspMing-Yu Liu,&nbspDonglai Xiang,&nbspGordon Wetzstein,&nbspTsung-Yi Lin
+                  
+                  <br>
+                  <em>CVPR 2025</em>
+                  <br>
+                  <a href="https://arxiv.org/abs/2503.22020">[paper]</a>
+                  <a href="https://cot-vla.github.io">[website]</a>
+              </td>
+          </tr>
+
+          <tr>
+            <td style="padding:10px;width:45%;vertical-align:middle">
+                <div class="one" style="display:flex;align-items:center;height:100%;width:100%;">
+                    <a href="images/nvila.png">
+                        <img src='images/nvila.png' class="hoverZoomLink" style="width: 100%; vertical-align:middle;">
+                    </a>
+                </div>
+            </td>
+            <td class="paper-content" style="padding:20px;width:55%;vertical-align:top">
+                <papertitle>NVILA: Efficient Frontier Visual Language Models</papertitle>
+                <br>
+                Zhijian Liu*,&nbspLigeng Zhu*,&nbspBaifeng Shi,&nbsp<strong>Zhuoyang Zhang</strong>,&nbspYuming Lou,&nbspShang Yang,&nbspHaocheng Xi,&nbspShiyi Cao,&nbspYuxian Gu,&nbspDacheng Li,&nbspXiuyu Li,&nbspYunhao Fang,&nbspYukang Chen,&nbspCheng-Yu Hsieh,&nbspDe-An Huang,&nbspAn-Chieh Cheng,&nbspVishwesh Nath,&nbspJinyi Hu,&nbspSifei Liu,&nbspRanjay Krishna,&nbspDaguang Xu,&nbspXiaolong Wang,&nbspPavlo Molchanov,&nbspJan Kautz,&nbspHongxu Yin,&nbspSong Han,&nbspYao Lu
+                
+                <br>
+                <em>CVPR 2025</em>
+                <br>
+                <a href="https://arxiv.org/abs/2412.04468">[paper]</a>
+                <a href="https://github.com/NVlabs/VILA">[code]</a>
+                <a href="https://vila.mit.edu/">[demo]</a>
+                <a href="https://nvlabs.github.io/VILA/">[website]</a>
+            </td>
+        </tr>
+           
+           <tr>
+             <td style="padding:10px;width:45%;vertical-align:middle">
+                 <div class="one" style="display:flex;align-items:center;height:100%;width:100%;">
+                     <a href="images/vila_u.png">
+                         <img src='images/vila_u.png' class="hoverZoomLink" style="width: 100%; vertical-align:middle;">
+                     </a>
+                 </div>
+             </td>
+             <td class="paper-content" style="padding:20px;width:55%;vertical-align:top">
+                 <papertitle>VILA-U: a Unified Foundation Model Integrating Visual Understanding and Generation</papertitle>
+                 <br>
+                 Yecheng Wu*,&nbsp<strong>Zhuoyang Zhang*</strong>,&nbspJunyu Chen,&nbspHaotian Tang,&nbspDacheng Li,&nbspYunhao Fang,&nbspLigeng Zhu,&nbspEnze Xie,&nbspHongxu Yin,&nbspLi Yi,&nbspSong Han,&nbspYao Lu
+                 
+                 <br>
+                 <em>ICLR 2025</em>
+                 <br>
+                 <a href="https://arxiv.org/abs/2409.04429">[paper]</a>
+                 <a href="https://github.com/mit-han-lab/vila-u">[code]</a>
+                 <a href="https://vila-u.hanlab.ai/">[online demo]</a>
+             </td>
+           </tr>
+
+           <tr>
+            <td style="padding:10px;width:45%;vertical-align:middle">
+                <div class="one" style="display:flex;align-items:center;height:100%;width:100%;">
+                    <a href="images/hart.png">
+                        <img src='images/hart.jpg' class="hoverZoomLink" style="width: 100%; vertical-align:middle;">
+                    </a>
+                </div>
+            </td>
+            <td class="paper-content" style="padding:20px;width:55%;vertical-align:top">
+                <papertitle>HART: Efficient Visual Generation with Hybrid Autoregressive Transformer</papertitle>
+                <br>
+                Haotian Tang,&nbspYecheng Wu,&nbspShang Yang,&nbspEnze Xie,&nbspJunsong Chen,&nbspJunyu Chen,&nbsp<strong>Zhuoyang Zhang</strong>,&nbspHan Cai,&nbspYao Lu,&nbspSong Han
+                
+                <br>
+                <em>ICLR 2025</em>
+                <br>
+                <a href="https://arxiv.org/abs/2410.10812">[paper]</a>
+                <a href="https://github.com/mit-han-lab/hart">[code]</a>
+                <a href="https://hart.hanlab.ai/">[online demo]</a>
+            </td>
+          </tr>
+
+           <tr>
+             <td style="padding:10px;width:45%;vertical-align:middle">
+                 <div class="one" style="display:flex;align-items:center;height:100%;width:100%;">
+                     <a href="images/evitsam2.png">
+                         <img src='images/evitsam2.png' class="hoverZoomLink" style="width: 100%; vertical-align:middle;">
+                     </a>
+                 </div>
+             </td>
+             <td class="paper-content" style="padding:20px;width:55%;vertical-align:top">
+                 <papertitle>EfficientViT-SAM: Accelerated Segment Anything Model Without Accuracy Loss</papertitle>
+                 <br>
+                 <strong>Zhuoyang Zhang</strong>,&nbspHan Cai,&nbspSong Han
+                 
+                 <br>
+                 <em>CVPR 2024 ELVM Workshop</em>
+                 <br>
+                 <a href="https://arxiv.org/abs/2402.05008">[paper]</a>
+                 <a href="https://github.com/mit-han-lab/efficientvit">[code]</a>
+                 <a href="https://evitsam.hanlab.ai/">[online demo]</a>
+             </td>
+           </tr>
+
+          <tr>
+            <td style="padding:10px;width:45%;vertical-align:middle">
+                <div class="one" style="display:flex;align-items:center;height:100%;width:100%;">
+                    <a href="images/sparserefine.png">
+                        <img src='images/sparserefine.png' class="hoverZoomLink" style="width: 100%; vertical-align:middle;">
+                    </a>
+                </div>
+            </td>
+            <td class="paper-content" style="padding:20px;width:55%;vertical-align:top">
+                <papertitle>Sparse Refinement for Efficient High-resolution Semantic Segmentation</papertitle>
+                <br>
+                Zhijian Liu*,&nbsp<strong>Zhuoyang Zhang*</strong>,&nbspSamir Khaki,&nbspShang Yang,&nbspHaotian Tang,&nbspChenfeng Xu,&nbspKurt Keutzer,&nbspSong Han
+                
+                <br>
+                <em>ECCV 2024</em>
+                <br>
+                <a href="https://arxiv.org/abs/2407.19014">[paper]</a>
+                <a href="https://github.com/mit-han-lab/sparserefine">[code]</a>
+            </td>
+          </tr>
+
+           <tr>
+             <td style="padding:10px;width:45%;vertical-align:middle">
+                 <div class="one" style="display:flex;align-items:center;height:100%;width:100%;">
+                     <a href="images/12345++.gif">
+                         <img src='images/12345++.gif' class="hoverZoomLink" style="width: 100%; vertical-align:middle;">
+                     </a>
+                 </div>
+             </td>
+             <td class="paper-content" style="padding:20px;width:55%;vertical-align:top">
+                 <papertitle>One-2-3-45++: Fast Single Image to 3D Objects with Consistent Multi-View Generation and 3D Diffusion</papertitle>
+                 <br>
+                 Minghua Liu*,&nbspRuoxi Shi*,&nbspLinghao Chen*,&nbsp<strong>Zhuoyang Zhang*</strong>,&nbspChao Xu*,&nbspXinyue Wei,&nbspHansheng Chen,&nbspChong Zeng,&nbspJiayuan Gu,&nbspHao Su
+                 
+                 <br>
+                 <em>CVPR 2024</em>
+                 <br>
+                 <a href="https://arxiv.org/abs/2311.07885">[paper]</a>
+                 <a href="https://sudo-ai-3d.github.io/One2345plus_page/">[website]</a>
+             </td>
+           </tr>
+
+           <tr>
+            <td style="padding:10px;width:45%;vertical-align:middle">
+                <div class="one" style="display:flex;align-items:center;height:100%;width:100%;">
+                    <a href="images/0123++.jpg">
+                        <img src='images/0123++.jpg' class="hoverZoomLink" style="width: 100%; vertical-align:middle;">
+                    </a>
+                </div>
+            </td>
+            <td class="paper-content" style="padding:20px;width:55%;vertical-align:top">
+                <papertitle>Zero123++: a Single Image to Consistent Multi-view Diffusion Base Model</papertitle>
+                <br>
+                Ruoxi Shi,&nbspHansheng Chen,&nbsp<strong>Zhuoyang Zhang</strong>,&nbspMinghua Liu,&nbspChao Xu,&nbspXinyue Wei,&nbspLinghao Chen,&nbspChong Zeng,&nbspHao Su
+                
+                <br>
+                <em>Technical Report</em>
+                <br>
+                <a href="https://arxiv.org/abs/2310.15110">[paper]</a>
+                <a href="https://github.com/SUDO-AI-3D/zero123plus/">[code]</a>
+            </td>
+          </tr>
+
+           <tr>
+             <td style="padding:10px;width:45%;vertical-align:middle">
+                 <div class="one" style="display:flex;align-items:center;height:100%;width:100%;">
+                     <a href="images/c2p.png">
+                         <img src='images/c2p.png' class="hoverZoomLink" style="width: 100%; vertical-align:middle;">
+                     </a>
+                 </div>
+             </td>
+             <td class="paper-content" style="padding:20px;width:55%;vertical-align:top">
+                 <papertitle>Complete-to-partial 4D distillation for self-supervised point cloud sequence representation learning</papertitle>
+                 <br>
+                 <strong>Zhuoyang Zhang*</strong>,&nbspYuhao Dong*,&nbspYunze Liu,&nbspLi Yi
+                 
+                 <br>
+                 <em>CVPR 2023</em>
+                 <br>
+                 <a href="https://arxiv.org/abs/2212.05330">[paper]</a>
+                 <a href="https://github.com/dongyh20/C2P?tab=readme-ov-file/">[code]</a>
+             </td>
+           </tr>
+
+           </tbody></table>
+           </div>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h1>Academic Service</h1>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 5px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td class="paper-content" style="padding: 0px 20px 5px 20px;">
+                <ul style="margin: 0; padding-left: 20px;">
+                  <li><strong>Conference reviewer:</strong> ICLR, ICML, NeurIPS, CVPR, ICCV, ECCV, etc.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+             <tr>
+               <td style="padding:16px;width:100%;vertical-align:middle">
+                 <h1>Experience</h1>
+               </td>
+             </tr>
+           </tbody></table>
+           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+             <tr>
+               <td style="padding:20px;width:25%;vertical-align:middle">
+                 <div class="one">
+                   <a href="https://www.mit.edu/"><img src='images/MIT_Seal.svg' alt="MIT logo" style="width:100%;max-width:100%;"></a>
+                 </div>
+               </td>
+               <td class="paper-content" style="padding:20px;width:75%;vertical-align:middle">
+                 <papertitle>Massachusetts Institute of Technology</papertitle>
+                 <br>
+                 <div style="padding-bottom: 4px;">2024.09 - Present</div>
+                 Ph.D student in Computer Science
+                 <br>
+                 Advisor: Prof. <a href="https://hanlab.mit.edu/songhan/">Song Han</a>
+               </td>
+             </tr>
+
+             <tr>
+               <td style="padding:20px;width:25%;vertical-align:middle">
+                 <div class="one">
+                   <a href="https://www.tsinghua.edu.cn/"><img src='images/Tsinghua_University_Logo.svg' alt="Tsinghua logo" style="width:100%;max-width:100%;"></a>
+                 </div>
+               </td>
+               <td class="paper-content" style="padding:20px;width:75%;vertical-align:middle">
+                 <papertitle>Tsinghua University</papertitle>
+                 <br>
+                 <div style="padding-bottom: 4px;">2020.08 - 2024.06</div>
+                 B.Eng. in Computer Science, <a href="https://iiis.tsinghua.edu.cn/en/yaoclass/">Yao Class</a>
+                 <br>
+                 Advisor: Prof. <a href="https://ericyi.github.io/">Li Yi</a>
+               </td>
+             </tr>
+
+             <tr>
+               <td style="padding:20px;width:25%;vertical-align:middle">
+                 <div class="one">
+                   <a href="https://ucsd.edu/"><img src='images/Seal_of_the_University_of_California,_San_Diego.svg' alt="UCSD logo" style="width:100%;max-width:100%;"></a>
+                 </div>
+               </td>
+               <td class="paper-content" style="padding:20px;width:75%;vertical-align:middle">
+                 <papertitle>UC San Diego</papertitle>
+                 <br>
+                 <div style="padding-bottom: 4px;">2023.06 - 2023.10</div>
+                 Research Intern
+                 <br>
+                 Advisor: Prof. <a href="https://cseweb.ucsd.edu/~haosu/">Hao Su</a>
+               </td>
+             </tr> -->
+
+            </tbody></table>
+         </td>
+       </tr>
+          </table>
+
+
+     <script>
+       function showTab(tabName) {
+         const contents = document.querySelectorAll('.research-content');
+         contents.forEach(content => {
+           content.classList.remove('active');
+         });
+         
+         const buttons = document.querySelectorAll('.tab-button');
+         buttons.forEach(button => {
+           button.classList.remove('active');
+         });
+         
+         if (tabName === 'selected') {
+           document.getElementById('selected-research').classList.add('active');
+         } else if (tabName === 'full') {
+           document.getElementById('full-list').classList.add('active');
+         }
+         
+         event.target.classList.add('active');
+       }
+     </script>
+   </body>
+ </html>
